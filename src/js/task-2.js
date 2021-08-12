@@ -1,6 +1,7 @@
 'use strict';
 
-console.log('========================= Task 2 =========================');
+const TASK_NAME = '========================= Task 2 =========================';
+console.group(TASK_NAME);
 
 const inventory = {
   items: ['Knife', 'Gas mask'],
@@ -32,3 +33,5 @@ invokeInventoryAction('Gas mask', inventory.remove.bind(inventory));
 // Removing Gas mask from inventory
 
 console.log(inventory.items); // ['Knife', 'Medkit']
+
+console.groupEnd(TASK_NAME);

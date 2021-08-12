@@ -1,6 +1,7 @@
 'use strict';
 
-console.log('========================= Task 1 =========================');
+const TASK_NAME = '========================= Task 1 =========================';
+console.group(TASK_NAME);
 
 const account = {
   owner: 'Mango',
@@ -27,3 +28,5 @@ console.table(account.showOrders()); // ['order-1', 'order-2', 'order-3']
 account.addOrder(5000, 'order-4');
 console.log(account.balance); // 19000
 console.table(account.showOrders()); // ['order-1', 'order-2', 'order-3', 'order-4']
+
+console.groupEnd(TASK_NAME);
